@@ -29,7 +29,7 @@ jobs:
           npm install
 
       # Run Linting
-      - name: Run ESLint
+      - name: Run the ESLint
         run: npx eslint . 
 
       # Run Lint-Staged
@@ -40,7 +40,7 @@ jobs:
       - name: Run Tests
         run: npm test
 
-      - name: "Build Image"
+      - name: "Build theImage"
         run: |
           docker build -t dapper01/practice-image:1 .
 
